@@ -10,4 +10,13 @@ class App < Sinatra::Base
     x = params[:number].to_i ** 2
     x.to_s
   end
+
+  get '/say/:number/:phrase' do
+    output = ''
+
+    params[:number].to_i.times do
+      putput += params[:phrase]
+    end
+
+    answer
 end
