@@ -28,17 +28,15 @@ class App < Sinatra::Base
     number1 = params[:number1].to_i
     number2 = params[:number2].to_i
 
-    output = "You can't go here!"
-
     case params[:operation]
     when 'add'
-      output = (number1 + number2).to_s
+      (number1 + number2).to_s
     when 'subtract'
-      output = (number1 - number2).to_s
+      (number1 - number2).to_s
     when 'multiply'
-      output = (number1 * number2).to_s
+      (number1 * number2).to_s
     when 'divide'
-      output = (number1 / number2).to_s
+      (number1 / number2).to_s
     end
   end
 
