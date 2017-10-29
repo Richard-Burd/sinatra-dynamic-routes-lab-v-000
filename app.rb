@@ -28,7 +28,7 @@ class App < Sinatra::Base
     number1 = params[:number1].to_i
     number2 = params[:number2].to_i
 
-    output = " "
+    output = "You can't go here!"
 
     case params[:operation]
     when 'add'
